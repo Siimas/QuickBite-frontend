@@ -1,0 +1,18 @@
+name: Frontend Tests
+
+on:
+  push:
+    branches: [frontend]
+  pull_request:
+    branches: [frontend]
+    
+jobs:
+  build:
+    runs-on: ubunto-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Linter
+        run: cd frontend && npm run lint
+      - name: Build
+        run: cd frontend && npm run build 
