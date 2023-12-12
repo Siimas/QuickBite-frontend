@@ -1,0 +1,54 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Existing Dockerfile",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye"
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "../Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"formulahendry.auto-close-tag",
+				"formulahendry.auto-rename-tag",
+				"aaron-bond.better-comments",
+				"dsznajder.es7-react-js-snippets",
+				"xabikos.JavaScriptSnippets",
+				"ms-azuretools.vscode-docker",
+				"github.vscode-github-actions",
+				"eamodio.gitlens",
+				"ecmel.vscode-html-css",
+				"wix.vscode-import-cost",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"Cardinal90.multi-cursor-case-preserve",
+				"yoavbls.pretty-ts-errors",
+				"milkmidi.vs-code-quick-require",
+				"EthanSK.restore-terminals",
+				"burkeholland.simple-react-snippets",
+				"bradlc.vscode-tailwindcss",
+				"Gruntfuggly.todo-tree"
+			]
+		}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "cat /etc/os-release",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}
