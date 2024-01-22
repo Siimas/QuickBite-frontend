@@ -1,9 +1,9 @@
 FROM mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye
 
-WORKDIR /app/frontend
+WORKDIR /app
 
 # Copy Frontend dependencies
-COPY  frontend/package*.json ./
+COPY  package*.json ./
 
 # Install dependencies
 RUN npm install

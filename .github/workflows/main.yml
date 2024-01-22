@@ -1,4 +1,4 @@
-name: Main Tests
+name: Test and Lint
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
     
 jobs:
-  build_frontend:
+  build-lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
